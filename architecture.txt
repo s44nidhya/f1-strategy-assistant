@@ -1,0 +1,19 @@
+app/
+│
+├── core/                  # Simulation engine, race model
+│   ├── driver.py          # Driver agent logic
+│   ├── race_state.py      # Tracks race status
+│   └── simulator.py       # Orchestrates race progression
+│
+├── models/                # ML models
+│   ├── rl_strategy.py     # Reinforcement learning agent
+│   ├── tire_wear_gp.py    # Bayesian tire degradation model
+│   └── safetycar_predictor.py
+│
+├── ui/                    # Dashboard
+│   └── dashboard.py       # Streamlit / Plotly / Web frontend
+│
+├── server/                # Real-time API
+│   └── api.py             # FastAPI WebSocket + REST API
+│
+└── data/                  # Telemetry, lap data, race configs
